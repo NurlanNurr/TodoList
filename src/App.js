@@ -44,7 +44,7 @@ useEffect(()=> console.log(todolist), [todolist])
            <span className={todoitem.completed ? 'completed' : ''}>{todoitem.todo}</span>
            <button onClick={()=> deleteitem(todoitem.id)}>Delete</button>
            <button>edit</button>
-           <button onClick={()=> saveitem(todoitem.id)}>save</button>
+           {/* <button onClick={()=> saveitem(todoitem.id)}>save</button> */}
             </li>
         ))}
       </ul>
